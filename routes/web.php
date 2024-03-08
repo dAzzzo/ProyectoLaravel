@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginRegisterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\ClienteController;
@@ -21,5 +22,6 @@ use App\Http\Controllers\ClienteController;
 //con php artisan route:list nos saca todas las rutas actuales
 Route::resource('productos', ProductoController::class);
 Route::resource('clientes', ClienteController::class);
+Route::resource('login', LoginRegisterController::class);
 
 

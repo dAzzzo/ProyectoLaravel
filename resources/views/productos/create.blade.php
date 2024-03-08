@@ -19,10 +19,10 @@
                     @csrf
 
                     <div class="mb-3 row">
-                        <label for="nombre" class="col-md-4 col-form-label text-md-end text-start">Nombre</label>
+                        <label for="Nombre" class="col-md-4 col-form-label text-md-end text-start">Nombre</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control @error('nombre') is-invalid @enderror" id="nombre" name="nombre" value="{{ old('nombre') }}">
-                            @error('nombre')
+                          <input type="text" class="form-control @error('Nombre') is-invalid @enderror" id="Nombre" name="Nombre" value="{{ old('Nombre') }}">
+                            @error('Nombre')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
@@ -39,20 +39,20 @@
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="precio" class="col-md-4 col-form-label text-md-end text-start">Precio</label>
+                        <label for="Precio" class="col-md-4 col-form-label text-md-end text-start">Precio</label>
                         <div class="col-md-6">
-                          <input type="number" step="0.01" class="form-control @error('precio') is-invalid @enderror" id="precio" name="precio" value="{{ old('precio') }}">
-                            @error('precio')
+                          <input type="number" step="0.01" class="form-control @error('Precio') is-invalid @enderror" id="Precio" name="Precio" value="{{ old('Precio') }}">
+                            @error('Precio')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="stock" class="col-md-4 col-form-label text-md-end text-start">Stock</label>
+                        <label for="Stock" class="col-md-4 col-form-label text-md-end text-start">Stock</label>
                         <div class="col-md-6">
-                          <input type="number" class="form-control @error('stock') is-invalid @enderror" id="stock" name="stock" value="{{ old('stock') }}">
-                            @error('stock')
+                          <input type="number" class="form-control @error('Stock') is-invalid @enderror" id="Stock" name="Stock" value="{{ old('Stock') }}">
+                            @error('Stock')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>

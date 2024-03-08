@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Clientes; // Asegúrate de que este es el nombre correcto de tu modelo
+use App\Models\Clientes; 
 use Illuminate\Http\Request;
 
 class ClienteController extends Controller
