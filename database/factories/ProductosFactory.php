@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\ProductoModel; // Asegúrate de importar correctamente tu modelo ProductoModel
+use App\Models\Producto; // Asegúrate de importar correctamente tu modelo ProductoModel
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ProductosFactory extends Factory
@@ -12,7 +12,7 @@ class ProductosFactory extends Factory
      *
      * @var string
      */
-    
+
     public function definition(): array
     {
         return [

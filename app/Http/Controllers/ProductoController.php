@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ProductoModel; // Asegúrate de que este es el nombre correcto de tu modelo
+use App\Models\Productos; // Asegúrate de que este es el nombre correcto de tu modelo
 use Illuminate\Http\Request;
 
 class ProductoController extends Controller
@@ -10,7 +10,7 @@ class ProductoController extends Controller
     public function index()
     {
         // Pagina los resultados, mostrando 10 productos por página
-        $productos = ProductoModel::paginate(10);
+        $productos = Productos::paginate(10);
         return view('productos.index', compact('productos'));
     }
 
@@ -21,27 +21,27 @@ class ProductoController extends Controller
 
     public function store(Request $request)
     {
-        ProductoModel::create($request->all()); // Corregido a ProductoModel
+        Productos::create($request->all()); // Corregido a Productos
         return redirect()->route('productos.index');
     }
 
-    public function show(ProductoModel $producto) // Corregido a ProductoModel
+    public function show(Productos $producto) // Corregido a Productos
     {
         return view('productos.show', compact('producto'));
     }
 
-    public function edit(ProductoModel $producto) // Corregido a ProductoModel
+    public function edit(Productos $producto) // Corregido a Productos
     {
         return view('productos.edit', compact('producto'));
     }
 
-    public function update(Request $request, ProductoModel $producto) // Corregido a ProductoModel
+    public function update(Request $request, Productos $producto) // Corregido a Productos
     {
         $producto->update($request->all());
         return redirect()->route('productos.index');
     }
 
-    public function destroy(ProductoModel $producto) // Corregido a ProductoModel
+    public function destroy(Productos $producto) // Corregido a Productos
     {
         $producto->delete();
         return redirect()->route('productos.index');

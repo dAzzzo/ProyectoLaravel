@@ -1,4 +1,4 @@
-@extends('layouts.app') {{-- Asegúrate de que este extend apunte a tu layout principal --}}
+@extends('clientes.layouts') {{-- Asegúrate de que este extend apunte a tu layout principal --}}
 
 @section('content')
 

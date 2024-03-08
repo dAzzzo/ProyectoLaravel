@@ -1,4 +1,4 @@
-@extends('layouts.app') 
+@extends('productos.layouts') 
 
 @section('content')
 
@@ -29,11 +29,11 @@
                     <tbody>
                         @foreach ($productos as $producto)
                         <tr>
-                            <th scope="row">{{ $producto->id }}</th>
-                            <td>{{ $producto->nombre }}</td>
-                            <td>{{ $producto->descripcion }}</td>
-                            <td>{{ $producto->precio }}</td>
-                            <td>{{ $producto->stock }}</td>
+                            <th>{{ $producto->id }}</th>
+                            <td>{{ $producto->Nombre }}</td>
+                            <td>{{ $producto->Descripcion }}</td>
+                            <td>{{ $producto->Precio }}</td>
+                            <td>{{ $producto->Stock }}</td>
                             <td>
                                 <form action="{{ route('productos.destroy', $producto->id) }}" method="post">
                                     @csrf
@@ -49,8 +49,6 @@
 
                     </tbody>
                   </table>
-
-                  {{ $productos->links() }}
 
             </div>
         </div>

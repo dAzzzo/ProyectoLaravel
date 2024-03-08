@@ -1,4 +1,4 @@
-@extends('layouts.app') 
+@extends('clientes.layouts') 
 
 @section('content')
 
@@ -30,10 +30,10 @@
                         @foreach ($clientes as $cliente)
                         <tr>
                             <th scope="row">{{ $cliente->id }}</th>
-                            <td>{{ $cliente->nombre }}</td>
-                            <td>{{ $cliente->email }}</td>
-                            <td>{{ $cliente->direccion }}</td>
-                            <td>{{ $cliente->telefono }}</td>
+                            <td>{{ $cliente->Nombre }}</td>
+                            <td>{{ $cliente->Email }}</td>
+                            <td>{{ $cliente->Direccion }}</td>
+                            <td>{{ $cliente->Telefono }}</td>
                             <td>
                                 <form action="{{ route('clientes.destroy', $cliente->id) }}" method="post">
                                     @csrf

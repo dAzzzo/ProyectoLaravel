@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ClienteModel; // Asegúrate de que este es el nombre correcto de tu modelo
+use App\Models\Clientes; // Asegúrate de que este es el nombre correcto de tu modelo
 use Illuminate\Http\Request;
 
 class ClienteController extends Controller
@@ -10,7 +10,7 @@ class ClienteController extends Controller
     public function index()
     {
         // Pagina los resultados, mostrando 10 clientes por página
-        $clientes = ClienteModel::paginate(10);
+        $clientes = Clientes::paginate(10);
         return view('clientes.index', compact('clientes'));
     }
 
@@ -21,27 +21,27 @@ class ClienteController extends Controller
 
     public function store(Request $request)
     {
-        ClienteModel::create($request->all()); // Corregido a ClienteModel
+        Clientes::create($request->all()); // Corregido a Clientes
         return redirect()->route('clientes.index');
     }
 
-    public function show(ClienteModel $cliente) // Corregido a ClienteModel
+    public function show(Clientes $cliente) // Corregido a Clientes
     {
         return view('clientes.show', compact('cliente'));
     }
 
-    public function edit(ClienteModel $cliente) // Corregido a ClienteModel
+    public function edit(Clientes $cliente) // Corregido a Clientes
     {
         return view('clientes.edit', compact('cliente'));
     }
 
-    public function update(Request $request, ClienteModel $cliente) // Corregido a ClienteModel
+    public function update(Request $request, Clientes $cliente) // Corregido a Clientes
     {
         $cliente->update($request->all());
         return redirect()->route('clientes.index');
     }
 
-    public function destroy(ClienteModel $cliente) // Corregido a ClienteModel
+    public function destroy(Clientes $cliente) // Corregido a Clientes
     {
         $cliente->delete();
         return redirect()->route('clientes.index');
