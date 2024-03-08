@@ -15,14 +15,14 @@ class ClientesFactory extends Factory
      *
      * @var string
      */
-    
+
     public function definition()
     {
         return [
             'Nombre' => $this->faker->name,
             'Email' => $this->faker->unique()->safeEmail,
             'Direccion' => $this->faker->address,
-            'Telefono' => $this->faker->phoneNumber,
+            'Telefono' => $this->faker->numberBetween(600000000, 699999999),
         ];
     }
 }

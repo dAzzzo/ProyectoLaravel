@@ -39,6 +39,8 @@
                                     @csrf
                                     @method('DELETE')
 
+                                    <a href="{{ route('productos.show', $producto->id) }}" class="btn btn-warning btn-sm"><i class="bi bi-eye"></i> Ver</a>
+
                                     <a href="{{ route('productos.edit', $producto->id) }}" class="btn btn-primary btn-sm">Editar</a>   
 
                                     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Quieres Borrar este producto?');">Borrar</button>

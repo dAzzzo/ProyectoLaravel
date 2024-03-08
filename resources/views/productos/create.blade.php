@@ -29,10 +29,10 @@
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="descripcion" class="col-md-4 col-form-label text-md-end text-start">Descripción</label>
+                        <label for="Descripcion" class="col-md-4 col-form-label text-md-end text-start">Descripción</label>
                         <div class="col-md-6">
-                            <textarea class="form-control @error('descripcion') is-invalid @enderror" id="descripcion" name="descripcion">{{ old('descripcion') }}</textarea>
-                            @error('descripcion')
+                            <textarea class="form-control @error('Descripcion') is-invalid @enderror" id="Descripcion" name="Descripcion">{{ old('Descripcion') }}</textarea>
+                            @error('Descripcion')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>

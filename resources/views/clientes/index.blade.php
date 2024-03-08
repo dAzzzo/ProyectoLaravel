@@ -39,6 +39,9 @@
                                     @csrf
                                     @method('DELETE')
 
+
+                                    <a href="{{ route('clientes.show', $cliente->id) }}" class="btn btn-warning btn-sm"><i class="bi bi-eye"></i> Ver</a>
+
                                     <a href="{{ route('clientes.edit', $cliente->id) }}" class="btn btn-primary btn-sm">Editar</a>   
 
                                     <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('¿Quieres Borrar este cliente?');">Borrar</button>

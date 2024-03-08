@@ -19,28 +19,28 @@
                     <div class="row">
                         <label class="col-md-4 col-form-label text-md-end text-start"><strong>Nombre:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $cliente->nombre }}
+                            {{ $cliente->Nombre }}
                         </div>
                     </div>
 
                     <div class="row">
                         <label class="col-md-4 col-form-label text-md-end text-start"><strong>Email:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $cliente->email }}
+                            {{ $cliente->Email }}
                         </div>
                     </div>
 
                     <div class="row">
                         <label class="col-md-4 col-form-label text-md-end text-start"><strong>Dirección:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $cliente->direccion }}
+                            {{ $cliente->Direccion }}
                         </div>
                     </div>
 
                     <div class="row">
                         <label class="col-md-4 col-form-label text-md-end text-start"><strong>Teléfono:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $cliente->telefono }}
+                            {{ $cliente->Telefono }}
                         </div>
                     </div>
         

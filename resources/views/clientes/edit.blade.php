@@ -26,40 +26,40 @@
                     @method("PUT")
 
                     <div class="mb-3 row">
-                        <label for="nombre" class="col-md-4 col-form-label text-md-end text-start">Nombre</label>
+                        <label for="Nombre" class="col-md-4 col-form-label text-md-end text-start">Nombre</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control @error('nombre') is-invalid @enderror" id="nombre" name="nombre" value="{{ $cliente->nombre }}">
-                            @error('nombre')
+                          <input type="text" class="form-control @error('Nombre') is-invalid @enderror" id="Nombre" name="Nombre" value="{{ $cliente->Nombre }}">
+                            @error('Nombre')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="email" class="col-md-4 col-form-label text-md-end text-start">Email</label>
+                        <label for="Email" class="col-md-4 col-form-label text-md-end text-start">Email</label>
                         <div class="col-md-6">
-                          <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ $cliente->email }}">
-                            @error('email')
+                          <input type="Email" class="form-control @error('Email') is-invalid @enderror" id="Email" name="Email" value="{{ $cliente->Email }}">
+                            @error('Email')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="direccion" class="col-md-4 col-form-label text-md-end text-start">Dirección</label>
+                        <label for="Direccion" class="col-md-4 col-form-label text-md-end text-start">Dirección</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control @error('direccion') is-invalid @enderror" id="direccion" name="direccion" value="{{ $cliente->direccion }}">
-                            @error('direccion')
+                          <input type="text" class="form-control @error('Direccion') is-invalid @enderror" id="Direccion" name="Direccion" value="{{ $cliente->Direccion }}">
+                            @error('Direccion')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="telefono" class="col-md-4 col-form-label text-md-end text-start">Teléfono</label>
+                        <label for="Telefono" class="col-md-4 col-form-label text-md-end text-start">Teléfono</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control @error('telefono') is-invalid @enderror" id="telefono" name="telefono" value="{{ $cliente->telefono }}">
-                            @error('telefono')
+                          <input type="text" class="form-control @error('Telefono') is-invalid @enderror" id="Telefono" name="Telefono" value="{{ $cliente->Telefono }}">
+                            @error('Telefono')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>

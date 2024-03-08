@@ -19,28 +19,28 @@
                     <div class="row">
                         <label class="col-md-4 col-form-label text-md-end text-start"><strong>Nombre:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $producto->nombre }}
+                            {{ $producto->Nombre }}
                         </div>
                     </div>
 
                     <div class="row">
                         <label class="col-md-4 col-form-label text-md-end text-start"><strong>Descripción:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $producto->descripcion }}
+                            {{ $producto->Descripcion }}
                         </div>
                     </div>
 
                     <div class="row">
                         <label class="col-md-4 col-form-label text-md-end text-start"><strong>Precio:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $producto->precio }}
+                            {{ $producto->Precio }}
                         </div>
                     </div>
 
                     <div class="row">
                         <label class="col-md-4 col-form-label text-md-end text-start"><strong>Stock:</strong></label>
                         <div class="col-md-6" style="line-height: 35px;">
-                            {{ $producto->stock }}
+                            {{ $producto->Stock }}
                         </div>
                     </div>
         

@@ -49,10 +49,10 @@
                     </div>
 
                     <div class="mb-3 row">
-                        <label for="telefono" class="col-md-4 col-form-label text-md-end text-start">Teléfono</label>
+                        <label for="Telefono" class="col-md-4 col-form-label text-md-end text-start">Teléfono</label>
                         <div class="col-md-6">
-                          <input type="text" class="form-control @error('telefono') is-invalid @enderror" id="telefono" name="telefono" value="{{ old('telefono') }}">
-                            @error('telefono')
+                          <input type="text" class="form-control @error('Telefono') is-invalid @enderror" id="Telefono" name="Telefono" value="{{ old('Telefono') }}">
+                            @error('Telefono')
                                 <span class="text-danger">{{ $message }}</span>
                             @enderror
                         </div>
